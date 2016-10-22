@@ -10,8 +10,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-	    String rawNumber = null;
-        long phNumber = 0l;
+        String rawNumber;
+        long phNumber;
         int iterNum = 1;
         Scanner s = new Scanner(System.in);
         String[] finalResult = {"Nil", "One", "Two", "Three", "Four", "5", "6", "7", "8", "9"};
@@ -44,7 +44,5 @@ public class Main {
             iterNum++;
         }
         System.out.println("Final result is " + finalResult[(int) phNumber]); //некрасиво с приведением, но уже почти четрые утра :)
-
-        return;
     }
 }
