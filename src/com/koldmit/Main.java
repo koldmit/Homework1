@@ -18,7 +18,7 @@ public class Main {
         while (true) {
             System.out.println("Plz enter phone number:");
             rawNumber = s.nextLine();
-            if (rawNumber.matches("^\\+?(8|38)?(\\(?\\d{3}\\)?){1}([\\s\\-]?\\d){7}$")) {
+            if (rawNumber.matches("^\\+?(?:8|38)?(?:\\(?\\d{3}\\)?){1}(?:[\\s\\-]?\\d){7}$")) {
                 break;
             }
             else {
@@ -43,6 +43,6 @@ public class Main {
             System.out.format("Round of calculation # %d, sum is %d %n", iterNum, phNumber);
             iterNum++;
         }
-        System.out.println("Final result is " + finalResult[(int) phNumber]); //некрасиво с приведением, но уже почти четрые утра :)
+        System.out.println("Final result is " + finalResult[(int) phNumber]);
     }
 }
